@@ -207,10 +207,23 @@ header .line {
     background-size: cover;
     background-position: center;
 }
-
-
-
-
+.area4 {
+    display: grid;
+    grid-template-columns: 590px 1fr;
+    background-color: var(--bg-grey-color);
+}
+.area4--content {
+    padding: 150px 110px;
+}
+.area4 p {
+    margin-bottom: 50px;
+    line-height: 25px;
+}
+.area4--img1 {
+    background-image: url('./assets/bg3.jpg');
+    /* background-size: cover; */
+    background-position: left;
+}
 
 
 
