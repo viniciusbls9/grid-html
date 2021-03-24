@@ -129,11 +129,9 @@ header .line {
     grid-template-columns: repeat(2, 1fr);
 }
 .area1--content {
-    width: 30rem;
-    margin: auto;
+    padding: 10rem;
     min-height: 34rem;
     height: auto;
-    margin-top: 5rem;
 }
 .area1--content p {
     margin-bottom: 3rem;
@@ -160,11 +158,9 @@ header .line {
     grid-template-columns: repeat(2, 1fr);
 }
 .area2--content {
-    width: 30rem;
-    margin: auto;
+    padding: 10rem;
     min-height: 34rem;
     height: auto;
-    margin-top: 5.6rem;
 }
 .area2--content p {
     margin-bottom: 3.1rem;
@@ -247,16 +243,13 @@ footer a {
     .area1 {
         grid-template-columns: 1fr 2fr;
     }
-    .area1--content {
+    .area1--content,
+    .area2--content {
         padding-left: 3rem;
         padding-right: 3rem;
     }
     .area2 {
         grid-template-columns: 2fr 1fr;
-    }
-    .area2--content  {
-        padding-left: 3rem;
-        padding-right: 3rem;
     }
 }
 @media (min-width: 426px) and (max-width: 768px) {
@@ -267,28 +260,48 @@ footer a {
     .area1 {
         grid-template-columns: 1fr 2fr;
     }
-    .area1--content {
+    .area1--content,
+    .area2--content {
         padding-left: 3rem;
         padding-right: 3rem;
     }
-    .area2 {
-        grid-template-columns: 2fr 1fr;
-    }
-    .area2--content  {
-        padding-left: 3rem;
-        padding-right: 3rem;
-    }
+    .area2,
     .area3 {
         grid-template-columns: 2fr 1fr;
     }
 }
 @media (max-width: 425px) {
-    
+    .container {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    .header--search input {
+        max-width: 11rem;
+    }
+    h1 {
+        font-size: 3.6rem;
+        line-height: 3.6rem;
+    }
+    .banner-images img {
+        width: 5rem;
+        height: 5rem;
+        border: 3px solid var(--border-green-color);
+        margin-right: 1rem;
+    }
+
+    .area1,
+    .area2,
+    .area3,
+    .area4 {
+        grid-template-columns: 1fr;
+    }
+    .area1--content,
+    .area2--content,
+    .area3--content,
+    .area4--content {
+        padding: 4rem;
+    }
 }
-
-
-
-
 
 @media(max-width: 1080px) {
     html {
