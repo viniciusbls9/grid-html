@@ -7,6 +7,7 @@
     --grey-color: #454545;
     --border-green-color: #006341;
     --bg-grey-color: #e8e9ee;
+    --color-footer: #333;
 
 
     /* FONTS */
@@ -224,9 +225,21 @@ header .line {
     /* background-size: cover; */
     background-position: left;
 }
-
-
-
+.area5 {
+    background-image: url('./assets/bg4.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+footer {
+    background-color: var(--color-footer);
+    color: var(--bg-grey-color);
+    padding: 80px;
+    text-align: center;
+}
+footer a {
+    color: var(--bg-grey-color);
+}
 
 
 
